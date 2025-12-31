@@ -6,3 +6,6 @@ $dbPassword = '';
 $dbDatabase = 'daily_tasks';
 
 $db = mysqli_connect($dbHostname, $dbUsername, $dbPassword,$dbDatabase);
+if (!$db) {
+    die("Database connection failed");
+}
